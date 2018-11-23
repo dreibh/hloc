@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TD:
-# Tried to run: ./example-inital-db-setup.sh hloc "/dev/null" ".." ""
+# Tried to run: ./example-inital-db-setup.sh hloc "hloc/dnsnames_iphops_4_all" ".." ""
 # in hloc/
 
 
