@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # TD:
-# Tried to run: ./example-inital-db-setup.sh hloc "hloc/dnsnames_iphops_4_all" ".." ""
+# - Extract the data from https://mediatum.ub.tum.de/1359182 (~ 10 GiB) to m1359182/.
+# - Run: ./example-inital-db-setup.sh hloc "m1359182/hloc/rdns-sources/router.domains.rdns" ".." ""
 # in hloc/
 
 
