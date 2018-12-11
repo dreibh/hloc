@@ -1,0 +1,14 @@
+Initialize:
+./example-inital-db-setup.sh hloc "hloc/list_ipv46_dnsname" ".." ""
+
+
+# Find:
+python3 -m hloc.scripts.find -p 12 -c blacklists/code.blacklist.txt -f blacklists/word.blacklist.txt -s blacklists/special.blacklist.txt -dbn hloc -l logs/find.log
+
+
+# Measurements:
+./do-measurements.sh hloc "<RIPE_ATLAS_KEY>" "`pwd`/.." ""
+
+
+# Output:
+SELECT * FROM domainLocationHintsWithDistanceRTTsAnnotated(NULL, NULL, FALSE, FALSE)

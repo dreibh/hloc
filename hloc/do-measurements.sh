@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# TD:
+# Run: ./do-measurements.sh hloc "<MY_ATLAS_KEY>" "`pwd`/.." ""
+# NOTE: The path must be *absolute!"
+
+
 # 1st parameter: database name
 # 2nd parameter: ripe atlas API key
 # 3rd parameter: path to hloc installation
