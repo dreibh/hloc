@@ -1,9 +1,13 @@
 Initialize:
-./example-inital-db-setup.sh hloc "hloc/list_ipv46_dnsname" ".." ""
+./example-inital-db-setup.sh hloc "hloc/list_test_dnsname" ".." ""
+# ./example-inital-db-setup.sh hloc "hloc/list_ipv46_dnsname" ".." ""
 
 
 # Find:
+# !!! Use "-p 1" for 1 process !!!
+cd ..
 python3 -m hloc.scripts.find -p 12 -c blacklists/code.blacklist.txt -f blacklists/word.blacklist.txt -s blacklists/special.blacklist.txt -dbn hloc -l logs/find.log
+cd hloc
 
 
 # Measurements:
