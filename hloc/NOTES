@@ -1,3 +1,13 @@
+Download and unpack m1359182.zip (from https://mediatum.ub.tum.de/1359182):
+cd hloc
+unzip m1359182.zip
+
+
+Extract pages_offline:
+cd hloc/data
+tar xJvf pages_offline.tar.xz
+
+
 Initialize:
 ./example-inital-db-setup.sh hloc "hloc/list_test_dnsname" ".." ""
 # ./example-inital-db-setup.sh hloc "hloc/list_ipv46_dnsname" ".." ""
